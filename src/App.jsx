@@ -1,5 +1,6 @@
 import './App.css'
 import OpskriftList from "./components/OpskriftList.jsx";
+import TilføjOpskrift from "./components/TilføjOpskrift.jsx";
 import {useEffect, useState} from "react";
 
 
@@ -18,7 +19,7 @@ function App({ apiFacade }) {
     <div className="App">
 
       <OpskriftList opskrifter={opskrifter}/>
-
+        <TilføjOpskrift/>
     </div>
   )
 }
