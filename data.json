@@ -5,7 +5,7 @@
       "navn": "Gris i paprika - simre-mad på den den nemme måde",
       "pris": 500,
       "type": "kød",
-      "Hyperlink": "https://madensverden.dk/gris-i-paprika/",
+      "hyperlink": "https://madensverden.dk/gris-i-paprika/",
       "hovedetingrediens": {
         "kød": "gris",
         "grønt": "gulerødder",
@@ -17,7 +17,7 @@
       "navn": "Hakket oksekød og spidskål i ovn",
       "pris": 300,
       "type": "kød",
-      "Hyperlink": "https://madensverden.dk/hakket-oksekoed-spidskaal-ovn/",
+      "hyperlink": "https://madensverden.dk/hakket-oksekoed-spidskaal-ovn/",
       "hovedetingrediens": {
         "kød": "hakket oksekød",
         "grønt": "spidskøl",
@@ -29,7 +29,7 @@
       "navn": "Vegetarisk panang",
       "pris": 200,
       "type": "vegetar",
-      "Hyperlink": "https://stinna.dk/aftensmad/vegetarisk-panang.html",
+      "hyperlink": "https://stinna.dk/aftensmad/vegetarisk-panang.html",
       "hovedetingrediens": {
         "kød": "ingen",
         "grønt": "edamamebønner ",
