@@ -4,10 +4,16 @@ import Opskrift from "./Opskrift.jsx";
 function OpskriftList({opskrifter}) {
 
     const [opskrift, setOpskrift] = useState({});
+    const [curValue, setCurValue] = useState(0);
 
     function getRandomInt() {
         const max = opskrifter.length;
-        return Math.floor(Math.random() * max); // The maximum is exclusive and the minimum is inclusive
+        let randNum
+        do {
+            randNum = Math.floor(Math.random() * max); // The maximum is exclusive and the minimum is inclusive
+        } while (randNum === curValue);
+        setCurValue(randNum)
+        return randNum
     }
 
     function getOpskrift() {

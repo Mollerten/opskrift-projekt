@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import opskrift from "./Opskrift.jsx";
 
-function TilføjOpskrift(props) {
+function TilføjOpskrift({ apiFacade, setOpskrifter, opskrifter }) {
 
     const initialValue ={
         "navn": "",
@@ -15,15 +15,18 @@ function TilføjOpskrift(props) {
     const submitHandler = (event) =>{
         event.preventDefault()
         console.table(nyOpskrift)
+        apiFacade.makeOpskrift((newOpskrift) => {
+            console.log(newOpskrift)
+        }, nyOpskrift)
+        setOpskrifter([...opskrifter, nyOpskrift])
         setNyOpskrift(initialValue);
-
     }
 
     const handleChange = event => {
         const target = event.target;
         const value = target.type === "checkbox" ? target.checked : target.value;
         const name = target.name;
-        setNyOpskrift({...opskrift, [name]: value});
+        setNyOpskrift({...nyOpskrift, [name]: value});
     };
 
     return (
@@ -60,6 +63,7 @@ function TilføjOpskrift(props) {
                 onChange={handleChange}
                 placeholder="Hyperlink"
             /> <br/>
+                <button type="submit">Tilføj opskrift</button>
         </form>
         </div>
     );

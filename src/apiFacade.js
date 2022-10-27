@@ -9,11 +9,12 @@ function apiFacade() {
     }
 
     function makeOpskrift(callback, body) {
-
+        utils.fetchAny(URL, callback, "POST", body)
     }
 
     return {
-        getOpskrifter
+        getOpskrifter,
+        makeOpskrift
     };
 }
 const returnValue = apiFacade();

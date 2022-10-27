@@ -18,8 +18,8 @@ function App({ apiFacade }) {
   return (
     <div className="App">
 
-      <OpskriftList opskrifter={opskrifter}/>
-        <TilføjOpskrift/>
+      <OpskriftList opskrifter={opskrifter} />
+        <TilføjOpskrift apiFacade={apiFacade} opskrifter={opskrifter} setOpskrifter={setOpskrifter} />
     </div>
   )
 }
