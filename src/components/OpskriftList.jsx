@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Opskrift from "./Opskrift.jsx";
 
+
 function OpskriftList({opskrifter}) {
 
     const [opskrift, setOpskrift] = useState({});
@@ -26,6 +27,8 @@ function OpskriftList({opskrifter}) {
             <button onClick={getOpskrift}>Hent opskrift</button>
             <div>
                 {<Opskrift
+                    setOpskrift={setOpskrift}
+                    opskrift={opskrift}
                     id={opskrift.id}
                     navn={opskrift.navn}
                     pris={opskrift.pris}

@@ -1,4 +1,4 @@
-import './App.css'
+import './styles/App.css'
 import OpskriftList from "./components/OpskriftList.jsx";
 import TilføjOpskrift from "./components/TilføjOpskrift.jsx";
 import {useEffect, useState} from "react";
@@ -6,7 +6,7 @@ import {useEffect, useState} from "react";
 
 function App({ apiFacade }) {
 
-  const [opskrifter, setOpskrifter] = useState([])
+    const [opskrifter, setOpskrifter] = useState([])
 
   useEffect(() => {
       apiFacade.getOpskrifter((data => setOpskrifter(data)))
@@ -18,7 +18,11 @@ function App({ apiFacade }) {
   return (
     <div className="App">
 
-      <OpskriftList opskrifter={opskrifter} />
+      <OpskriftList
+          opskrifter={opskrifter}
+
+
+      />
         <TilføjOpskrift apiFacade={apiFacade} opskrifter={opskrifter} setOpskrifter={setOpskrifter} />
     </div>
   )

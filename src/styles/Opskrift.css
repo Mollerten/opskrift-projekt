@@ -1,0 +1,8 @@
+.card {
+    width: 18rem;
+}
+
+.opskrift-card {
+    background-color: green;
+    border: 5px solid darkgreen;
+}
