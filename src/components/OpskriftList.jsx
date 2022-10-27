@@ -28,15 +28,6 @@ function OpskriftList({opskrifter}) {
                 />}
             </div>
 
-            {/*{opskrifter.map (opskrift =>*/}
-            {/*   <Opskrift key={opskrift.id}*/}
-            {/*       id={opskrift.id}*/}
-            {/*       navn={opskrift.navn}*/}
-            {/*       pris={opskrift.pris}*/}
-            {/*       type={opskrift.type}*/}
-            {/*       hyperlink={opskrift.hyperlink}*/}
-            {/*   />*/}
-            {/*)}*/}
         </div>
     );
 }

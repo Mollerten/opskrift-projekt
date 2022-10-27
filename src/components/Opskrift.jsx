@@ -6,7 +6,7 @@ function Opskrift(props) {
 
     const {navn, pris, type, hyperlink} = props
 
-    console.log({hyperlink})
+    // console.log({hyperlink})
     return (
         <div>
 

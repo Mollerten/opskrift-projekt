@@ -3,14 +3,15 @@ import OpskriftList from "./components/OpskriftList.jsx";
 import {useEffect, useState} from "react";
 
 
-function App() {
+function App({ apiFacade }) {
 
   const [opskrifter, setOpskrifter] = useState([])
 
   useEffect(() => {
-     fetch("http://localhost:5000/opskrifter")
-        .then(response => response.json())
-        .then(data => setOpskrifter(data))
+      apiFacade.getOpskrifter((data => setOpskrifter(data)))
+     // fetch("http://localhost:5000/opskrifter")
+     //    .then(response => response.json())
+     //    .then(data => setOpskrifter(data))
   }, [])
 
   return (
