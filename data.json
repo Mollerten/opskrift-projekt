@@ -6,11 +6,6 @@
       "pris": 500,
       "type": "kød",
       "hyperlink": "https://madensverden.dk/gris-i-paprika/",
-      "hovedetingrediens": {
-        "kød": "gris",
-        "grønt": "gulerødder",
-        "krydderi": "paprika"
-      }
     },
     {
       "id": "2",
@@ -18,11 +13,6 @@
       "pris": 300,
       "type": "kød",
       "hyperlink": "https://madensverden.dk/hakket-oksekoed-spidskaal-ovn/",
-      "hovedetingrediens": {
-        "kød": "hakket oksekød",
-        "grønt": "spidskøl",
-        "krydderi": "paprika"
-      }
     },
     {
       "id": "3",
@@ -30,11 +20,6 @@
       "pris": 200,
       "type": "vegetar",
       "hyperlink": "https://stinna.dk/aftensmad/vegetarisk-panang.html",
-      "hovedetingrediens": {
-        "kød": "ingen",
-        "grønt": "edamamebønner ",
-        "krydderi": "karrypasta"
-      }
     }
   ]
 }
