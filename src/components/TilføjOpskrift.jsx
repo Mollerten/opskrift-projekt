@@ -24,7 +24,8 @@ function TilføjOpskrift({ apiFacade, setOpskrifter, opskrifter }) {
 
     const handleChange = event => {
         const target = event.target;
-        const value = target.type === "checkbox" ? target.checked : target.value;
+        const value = target.type === "checkbox" ? target.checked : target.type === "number"
+                                                 ? parseInt(target.value) : target.value;
         const name = target.name;
         setNyOpskrift({...nyOpskrift, [name]: value});
     };

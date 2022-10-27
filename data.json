@@ -23,14 +23,14 @@
     },
     {
       "navn": "Test",
-      "pris": "41",
+      "pris": 41,
       "type": "TEst",
       "hyperlink": "ahdygtuja",
       "id": "FUnJhtT"
     },
     {
       "navn": "TestPost",
-      "pris": "199",
+      "pris": 199,
       "type": "Kode",
       "hyperlink": "stack :^)",
       "id": "oar-xb7"
